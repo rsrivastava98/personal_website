@@ -1,0 +1,117 @@
+.App{
+    font-family: Roboto-Mono, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.App .header{
+    padding: 2.5rem;
+    font-weight: bold;
+    color: #540b0e
+}
+
+.head_icon{
+    color: #e09f3e;
+}
+
+.projects-header{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projects-header h2{
+    font-weight: bold;
+    display: inline-block;
+    color: #540b0e;
+}
+
+.single-project-header{
+    font-weight: bold;
+    display: inline-block;
+    color: #540b0e;
+    margin-left: 2.5rem;
+}
+
+.icon{
+    padding: 0.5rem;
+    color: #540b0e;
+}
+
+.about{
+    padding: 2rem;
+    text-align: center;
+}
+
+.cards{
+    margin-bottom: 2rem;
+}
+
+.card{
+    background-color: #335c67;
+    color: #fff3b0;
+    font-weight: 300;
+}
+
+.card Button{
+    background-color: #fff3b0;
+    color: #335c67;
+    border: none
+}
+
+.resume{
+    background-color: #540b0e;
+    color: #fff3b0;
+    border: none;
+    vertical-align: 0.5rem;
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+
+.bio{
+    display: block;
+    padding: 0.5rem;
+    font-weight: 400;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+.bio p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bio h3{
+    font-weight: bold;
+    color: #540b0e;
+}
+.profile{
+    width: 60%;
+    height: auto;
+    padding: 0.5rem;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+body{
+    background-color: #fff3b0;
+}
+
+@media screen and (max-width: 600px){
+    .bio{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    
+}
