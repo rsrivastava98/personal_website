@@ -56,7 +56,7 @@ class About extends Component {
                 <Image src={profile} className="profile" alt='profile' rounded/>
                 </Col>
                 <Col xs = {12} md = {12} lg = {6} className = "bio">
-                <h3>My Story <span role="img" aria-label="man" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 👨‍💻 </span></h3>
+                <h3>About Me <span role="img" aria-label="man" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 👨‍💻 </span></h3>
                 <p>I am a rising senior at Brown University concentrating in Computer Science-Economics, passionate about Software, Fintech and Product Management! I grew up in Bhopal, India however spent 6 years of my life boarding at the Doon School in the foothills of the Indian Himalayas before moving to Providence, RI.
                  Catch me at rehearsal for Brown Barsaat, Brown's premier south asian fusion acapella group, on the soccer field playing or indoors watching a game, or at your nearest Indian restaurant (Kebab and Curry for brown students!) </p>
                 <Container>

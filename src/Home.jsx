@@ -7,7 +7,11 @@ import FilteredList from "./FilteredList"
 import Container from 'react-bootstrap/Container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+
 import Button from 'react-bootstrap/Button'
+import ScrollToTop from 'react-scroll-up'
+import Footer from './Footer'
 
 
 class Home extends Component {
@@ -22,24 +26,21 @@ class Home extends Component {
 
         <About/>
 
+        <Container fluid className = 'blog'>
+            <Container fluid className = 'blog-header'>
+                <h2>These are my thoughts <span role="img" aria-label="thought" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 💭 </span></h2>
+            </Container>
+            <Container fluid>
+                <p>I enjoy writing about tech, food, soccer, personal finance and culture. Check out  my latest pieces <a href = 'https://medium.com/@rudra_srivastava'>here</a></p>
+            </Container>
+        </Container>
+        
+        
         <Projects projects = {this.props.projects}/>
 
-        <Container className = "footer">
+        <Footer/>
 
-        <Container fluid>
-          <h3>Let's Chat!</h3>
-          
-        </Container>
-
-        <Container>
-            <p style={{fontSize: "20px"}}>Would be happy to talk about anything and everything 
-            <span role="img" aria-label="smile" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 😊</span>
-
-            </p>
-            <Button className = 'icon-phone' href= "https://calendly.com/rudrasrivastava98/30min"> Schedule <FontAwesomeIcon  icon={faPhone}/></Button>
-        </Container>
-
-        </Container>
+        
 
       </div>
     );

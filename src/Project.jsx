@@ -72,14 +72,14 @@ class Projects extends Component {
 
   render() {
     return (
-        <Container className = "projects">
+        <Container fluid className = "projects">
 
         <Container fluid className="projects-header">
-          <h2>Projects  <span role="img" aria-label="book" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 📖 </span></h2>
+          <h2>Here is my work so far  <span role="img" aria-label="book" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 📖 </span></h2>
           
         </Container>
 
-        <Container>
+        <Container className = 'projects-contents'>
 
         {this.createProjects()}
         
