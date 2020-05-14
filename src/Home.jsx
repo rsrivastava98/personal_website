@@ -32,8 +32,8 @@ class Home extends Component {
         </Container>
 
         <Container>
-            <p style={{fontSize: "20px", verticalAlign: "center"}}>Would be happy to chat about anything and everything 
-            <span role="img" aria-label="smile" aria-hidden = "false"> 😊</span>
+            <p style={{fontSize: "20px"}}>Would be happy to talk about anything and everything 
+            <span role="img" aria-label="smile" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 😊</span>
 
             </p>
             <Button className = 'icon-phone' href= "https://calendly.com/rudrasrivastava98/30min"> Schedule <FontAwesomeIcon  icon={faPhone}/></Button>

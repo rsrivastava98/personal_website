@@ -44,7 +44,7 @@ class Projects extends Component {
                     {project.short}
                     </Card.Text>
                     <Link to = {project.url}>
-                    <Button variant = 'info'>View</Button>
+                    <Button variant = 'secondary'>View</Button>
                     </Link>
                 </Card.Body>
                 </Card>
@@ -75,7 +75,7 @@ class Projects extends Component {
         <Container className = "projects">
 
         <Container fluid className="projects-header">
-          <h2>Projects </h2>
+          <h2>Projects  <span role="img" aria-label="book" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 📖 </span></h2>
           
         </Container>
 
