@@ -22,10 +22,14 @@ import {
 class App extends Component {
 
   projects = [
-        {"url": "/coronavirus", "description": "Coronavirus Dashboard", "short": "Data Driven Visualisations about the Virus"},
-        {"url": "/guitar", "description": "Guitar Center", "short":  "A simple web interface to search and filter for guitars"},
-        {"url": "/crowd", "description": "Crowd Counting", "short":  "Crowd Capacity estimation using Computer Vision and CNNs"}
+        {"url": "/projects/coronavirus", "description": "Impact of Government Intervention on the Coronavirus  ", "short": "A Data Science perspective"},
+        {"url": "/projects/guitar", "description": "Guitar Center", "short":  "A simple web interface to search and filter for guitars"},
+        {"url": "/projects/crowd", "description": "Crowd Counting", "short":  "Crowd Capacity estimation using Computer Vision and CNNs"},
+        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football"},
+        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football"},
+        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football"}
 
+       
   ]
 
   render() {

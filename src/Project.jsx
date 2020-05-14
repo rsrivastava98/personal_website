@@ -30,19 +30,12 @@ class Projects extends Component {
       super(props)
   }
 
-  render() {
-    return (
-        <Container className = "projects">
+  createRow = (projects) => {
 
-        <Container fluid className="projects-header">
-          <h2>Projects </h2>
-          
-        </Container>
+    return(
+    <CardDeck className = "cards">
 
-        <Container className = "cards">
-        <CardDeck>
-
-        {this.props.projects.map(function(project){
+        {projects.map(function(project){
 
                 return <Card  className = "card">
                 <Card.Body>
@@ -58,15 +51,43 @@ class Projects extends Component {
         }
         )}
 
-        </CardDeck>
+    </CardDeck>)
+
+
+  }
+
+  createProjects = () => {
+      var arr = []
+      for(var i = 0; i < this.props.projects.length; i=i+3){
+          
+        arr.push(this.createRow(this.props.projects.slice(i, i+3)))
+          
+      }
+
+      return(arr)
+  }
+
+
+
+
+  render() {
+    return (
+        <Container className = "projects">
+
+        <Container fluid className="projects-header">
+          <h2>Projects </h2>
+          
+        </Container>
+
+        <Container>
+
+        {this.createProjects()}
         
         </Container>
 
         </Container>
 
 
-
-     
       
     );
   }

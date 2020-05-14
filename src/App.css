@@ -18,6 +18,19 @@
     margin-bottom: 2rem;
 }
 
+.footer{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #540b0e;
+    padding: 0.5rem;
+}
+
 .projects-header h2{
     font-weight: bold;
     display: inline-block;
@@ -36,6 +49,15 @@
     color: #540b0e;
 }
 
+.icon-phone{
+    background-color: #540b0e;
+    color: #fff3b0;
+    border: none;
+    vertical-align: 0.5rem;
+    margin-left: 0.5rem;
+    font-weight: 400;
+}
+
 .about{
     padding: 2rem;
     text-align: center;
@@ -50,7 +72,9 @@
     color: #fff3b0;
     font-weight: 300;
 }
-
+.projects{
+    margin-bottom: 2rem;
+}
 .card Button{
     background-color: #fff3b0;
     color: #335c67;
@@ -111,6 +135,10 @@ body{
     .bio{
         margin-top: 2rem;
         text-align: center;
+    }
+
+    .cards{
+        margin-bottom: 0;
     }
 
     
