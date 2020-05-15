@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 
-import { faSun } from '@fortawesome/free-solid-svg-icons'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Container } from "react-bootstrap";
+import { 
+    BrowserRouter as Router, 
+    Route, 
+    Link, 
+    Switch,
+    withRouter
+} from 'react-router-dom'; 
 
 class Header extends Component {
   render() {
     return (
+    <Link to = '/'>
     <h1 className = "header">
         Rudra Srivastava
       </h1>
+      </Link>
 
       
 

@@ -100,10 +100,38 @@
 
 .single-project-header{
     font-weight: bold;
-    display: inline-block;
     color: var(--darkest);
     margin-left: 2.5rem;
 }
+
+.single-project-container{
+    margin-top: 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.single-project-container h3, h4{
+    font-weight: bold;
+    color: var(--darkest);
+    padding: 0.5rem;
+}
+.single-project-container p{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.single-project-image{
+    width: 60%;
+    height: auto;
+} 
+
+.button-project {
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border: none;
+    margin-left: 1rem;
+}
+
 
 .icon{
     padding: 0.5rem;
@@ -115,7 +143,7 @@
     color: var(--lightest);
     border: none;
     vertical-align: 0.5rem;
-    margin-left: rem;
+    margin-left: 0.25rem;
     font-weight: 400;
 }
 
@@ -170,9 +198,13 @@
     color: var(--darkest);
 }
 .profile{
-    width: 60%;
+    width: 70%;
     height: auto;
     padding: 0.5rem;
+}
+
+.rounded{
+    border-radius: 0.8rem!important;
 }
 
 
@@ -193,6 +225,11 @@ body{
     .cards{
         margin-bottom: 0;
     }
+
+    .single-project-image{
+        width: 100%;
+        height: auto;
+    } 
 
     
 }

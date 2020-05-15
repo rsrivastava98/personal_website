@@ -22,12 +22,12 @@ import {
 class App extends Component {
 
   projects = [
-        {"url": "/projects/coronavirus", "description": "Impact of Government Intervention on the Coronavirus", "short": "A Data Science perspective"},
-        {"url": "/projects/guitar", "description": "Guitar Center", "short":  "A simple web interface to search and filter for guitars"},
-        {"url": "/projects/crowd", "description": "Crowd Counting", "short":  "Crowd Capacity estimation using Computer Vision and CNNs"},
-        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football"},
-        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football"},
-        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football"}
+        {"url": "/projects/coronavirus", "description": "Government Policy Impact on the Coronavirus", "short": "A Data Science perspective", "emoji": "🦠" },
+        {"url": "/projects/guitar", "description": "Guitar Center", "short":  "A simple web interface to search and filter for guitars", "emoji": "🎸"},
+        {"url": "/projects/crowd", "description": "Crowd Counting", "short":  "Crowd Capacity estimation using Computer Vision and CNNs", "emoji": "👪"},
+        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football", "emoji": "⚽"},
+        {"url": "/projects/ccv", "description": "Computing Cluster User Management", "short":  "A tool to help manage the large user base at the CCV ", "emoji": "🖥️"},
+        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football", "emoji": "⚽"}
 
        
   ]

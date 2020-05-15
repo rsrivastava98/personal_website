@@ -6,14 +6,14 @@ import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
 
 
-import profile from './profile.jpg';
+import profile from './profile2.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
+import Emoji from './Emoji'
 
 
 
@@ -56,9 +56,9 @@ class About extends Component {
                 <Image src={profile} className="profile" alt='profile' rounded/>
                 </Col>
                 <Col xs = {12} md = {12} lg = {6} className = "bio">
-                <h3>About Me <span role="img" aria-label="man" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 👨‍💻 </span></h3>
+                <h3>About Me <Emoji emoji = "👨🏽‍💻" label = "person" /></h3>
                 <p>I grew up in Bhopal, India however spent 6 years of my life boarding at the Doon School in the foothills of the Indian Himalayas before moving to Providence, RI.
-                 Catch me at rehearsal for Brown Barsaat, Brown's premier south asian fusion acapella group, on the soccer field playing or indoors watching a game, or at your nearest Indian restaurant (Kebab and Curry for brown students!) </p>
+                 Catch me at rehearsal for Brown Barsaat, Brown's premier south asian fusion acapella group, on the soccer field playing, indoors watching a game, or at your nearest Indian restaurant (Kebab and Curry for brown students!) </p>
                 <Container>
                     <a href = "https://www.linkedin.com/in/rudra-srivastava1998" className = 'icon'><FontAwesomeIcon icon={faLinkedin} size="2x"/></a>
                     <a href = "https://www.instagram.com/rsrivastava98" className = 'icon'><FontAwesomeIcon icon={faInstagram} size="2x"/></a>

@@ -13,7 +13,7 @@ import Button from 'react-bootstrap/Button'
 import guitar from './guitar.png';
 import CV from './shanghaitech.png'
 import football from './football.png'
-
+import Emoji from './Emoji'
 
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -31,8 +31,9 @@ export const images = {
 
     "Guitar Center": guitar,
     "Football Dashboard": football,
-    "Impact of Government Intervention on the Coronavirus": guitar,
-    "Crowd Counting": CV
+    "Government Policy Impact on the Coronavirus": guitar,
+    "Crowd Counting": CV,
+    "Computing Cluster User Management": CV
 }
 
 
@@ -46,8 +47,6 @@ class Projects extends Component {
 
 
   createRow = (projects) => {
-
-    console.log(this.images)
     
     return(
     <CardDeck className = "cards">
@@ -57,7 +56,7 @@ class Projects extends Component {
                 return <Card  className = "card">
                 <Card.Img style = {{height: "188px"}} variant = 'top' src = {images[project.description]}/>
                 <Card.Body>
-                    <Card.Title>{project.description}</Card.Title>
+                    <Card.Title>{project.description} <Emoji label = {project.description} emoji = {project.emoji}/></Card.Title>
                     <Card.Text>
                     {project.short}
                     </Card.Text>
@@ -93,7 +92,7 @@ class Projects extends Component {
         <Container fluid className = "projects">
 
         <Container fluid className="projects-header">
-          <h2>Here is my work so far  <span role="img" aria-label="book" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 📖 </span></h2>
+          <h2>Here is my work so far  <Emoji emoji = "📖" label = "projects" /></h2>
           
         </Container>
 
