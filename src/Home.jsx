@@ -24,7 +24,17 @@ class Home extends Component {
         <div className="App">
         <Header/>
 
-        <About/>
+        <Container fluid className = 'hi'>
+            <Container fluid className = 'hi-header'>
+                <h1>Hi there <span role="img" aria-label="thought" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 👋 </span></h1>
+            </Container>
+            <Container >
+                <p>I am a Rudra <span role="img" aria-label="thought" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 👨🏽‍💻 </span> I am a rising senior at Brown University <span role="img" aria-label="thought" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 🐻 </span> ‍concentrating in Computer Science-Economics, passionate about Software, Fintech and Product Management! I interned at Oracle last summer as a Software Engineer on the Oracle Analytics Team and will be joining Square <span role="img" aria-label="thought" aria-hidden = "false" style = {{verticalAlign: "middle"}}> ◼️ </span>as a Software Engineer Intern on the Business Operations Platforms team this summer!  </p>
+            </Container>
+        </Container>
+
+
+        <Projects projects = {this.props.projects}/>
 
         <Container fluid className = 'blog'>
             <Container fluid className = 'blog-header'>
@@ -35,8 +45,8 @@ class Home extends Component {
             </Container>
         </Container>
         
-        
-        <Projects projects = {this.props.projects}/>
+
+        <About/>
 
         <Footer/>
 

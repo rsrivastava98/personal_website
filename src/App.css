@@ -70,7 +70,29 @@
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
-.blog-header h2{
+.blog-header h2, h1{
+    font-weight: bold;
+    display: inline-block;
+    color: var(--darkest);
+}
+
+.hi{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hi p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-bottom: 4rem;
+}
+
+.hi-header{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.hi-header h2, h1{
     font-weight: bold;
     display: inline-block;
     color: var(--darkest);
@@ -140,7 +162,7 @@
 
 .bio p{
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .bio h3{

@@ -57,7 +57,7 @@ class About extends Component {
                 </Col>
                 <Col xs = {12} md = {12} lg = {6} className = "bio">
                 <h3>About Me <span role="img" aria-label="man" aria-hidden = "false" style = {{verticalAlign: "middle"}}> 👨‍💻 </span></h3>
-                <p>I am a rising senior at Brown University concentrating in Computer Science-Economics, passionate about Software, Fintech and Product Management! I grew up in Bhopal, India however spent 6 years of my life boarding at the Doon School in the foothills of the Indian Himalayas before moving to Providence, RI.
+                <p>I grew up in Bhopal, India however spent 6 years of my life boarding at the Doon School in the foothills of the Indian Himalayas before moving to Providence, RI.
                  Catch me at rehearsal for Brown Barsaat, Brown's premier south asian fusion acapella group, on the soccer field playing or indoors watching a game, or at your nearest Indian restaurant (Kebab and Curry for brown students!) </p>
                 <Container>
                     <a href = "https://www.linkedin.com/in/rudra-srivastava1998" className = 'icon'><FontAwesomeIcon icon={faLinkedin} size="2x"/></a>

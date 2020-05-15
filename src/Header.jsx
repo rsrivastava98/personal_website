@@ -9,7 +9,7 @@ class Header extends Component {
   render() {
     return (
     <h1 className = "header">
-        Rudra Srivastava 
+        Rudra Srivastava
       </h1>
 
       

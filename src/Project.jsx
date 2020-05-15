@@ -10,10 +10,14 @@ import CardDeck from 'react-bootstrap/CardDeck'
 
 import Button from 'react-bootstrap/Button'
 
-import profile from './profile.jpg';
+import guitar from './guitar.png';
+import CV from './shanghaitech.png'
+import football from './football.png'
+
 
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 import { 
     BrowserRouter as Router, 
@@ -23,21 +27,35 @@ import {
     withRouter
 } from 'react-router-dom'; 
 
+export const images = {
+
+    "Guitar Center": guitar,
+    "Football Dashboard": football,
+    "Impact of Government Intervention on the Coronavirus": guitar,
+    "Crowd Counting": CV
+}
+
 
 class Projects extends Component {
 
+
   constructor(props){
       super(props)
+      
   }
+
 
   createRow = (projects) => {
 
+    console.log(this.images)
+    
     return(
     <CardDeck className = "cards">
 
         {projects.map(function(project){
 
                 return <Card  className = "card">
+                <Card.Img style = {{height: "188px"}} variant = 'top' src = {images[project.description]}/>
                 <Card.Body>
                     <Card.Title>{project.description}</Card.Title>
                     <Card.Text>
