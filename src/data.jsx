@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import guitar from './guitar.png'
 import Button from 'react-bootstrap/Button'
+import Data_Viz from './Data_Viz'
 
 
 
@@ -29,7 +30,12 @@ We used a predominantly white and gray color scheme with dark red accents. The n
 <Button href = 'https://agile-ocean-30189.herokuapp.com/' className = 'button-project'>Site</Button>
 
 </Container>
-</Container>}
+</Container>,
+
+"Football Dashboard": 
+<Data_Viz/>
+
+}
 
 
 export default data

@@ -2,8 +2,8 @@
 :root {
     --lightest: #f8f8f8;
     --darkest: #1d3557;
-    --tertiary: #457b9d;
-  }
+    --tertiary: #f8f8f8;
+}
 
 .App{
     font-family: 'gotham rounded', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -13,6 +13,10 @@
     padding: 2.5rem;
     font-weight: bold;
     color: var(--darkest);
+}
+
+html, body{
+    height: 100%
 }
 
 .head_icon{
@@ -113,11 +117,14 @@
 .single-project-container h3, h4{
     font-weight: bold;
     color: var(--darkest);
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 .single-project-container p{
-    padding: 0.5rem;
+    padding: 0.75rem;
     font-size: 1.25rem;
+}
+.hidden-div{
+    display: none;
 }
 
 .single-project-image{
@@ -157,17 +164,24 @@
 }
 
 .card{
-    background-color: var(--tertiary);
-    color: var(--lightest);
+    background-color: #f4f4f4;
+    color: #1d3557;
     font-weight: 300;
+    /* height: 366px;
+    width: 349px; */
 }
+
+/* .cards a{
+    text-decoration: none;
+} */
+
 .projects{
     margin-bottom: 2rem;
 }
 
 .card Button{
-    background-color: var(--lightest);
-    color: var(--tertiary);
+    background-color: var(--darkest);
+    color: #f4f4f4;
     border: none
 }
 
@@ -208,9 +222,6 @@
 }
 
 
-.App-link {
-  color: #09d3ac;
-}
 
 body{
     background-color: var(--lightest);
@@ -230,6 +241,32 @@ body{
         width: 100%;
         height: auto;
     } 
-
     
 }
+
+@media screen and (max-width: 1200px){
+    .data-viz{
+        display: none;
+    }
+
+    .hidden-div{
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    /* .card{
+        height: 320px;
+        width: 284px;
+    } */
+    .resume{
+        margin-top: 0.5rem;
+    }
+
+    /* .cards a{
+        text-align: center;
+    } */
+
+} 

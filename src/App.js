@@ -27,7 +27,7 @@ class App extends Component {
         {"url": "/projects/crowd", "description": "Crowd Counting", "short":  "Crowd Capacity estimation using Computer Vision and CNNs", "emoji": "👪"},
         {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football", "emoji": "⚽"},
         {"url": "/projects/ccv", "description": "Computing Cluster User Management", "short":  "A tool to help manage the large user base at the CCV ", "emoji": "🖥️"},
-        {"url": "/projects/football", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football", "emoji": "⚽"}
+        {"url": "/projects/football2", "description": "Football Dashboard", "short":  "Data Driven Visualizations for Football", "emoji": "⚽"}
 
        
   ]
