@@ -27,6 +27,10 @@ class Data_Viz extends Component {
             <p>A Dashboard showing Football Data for nations across the years. Visualizations only visible on wide screen <Emoji label = "sad" emoji = "😔"/> </p>
             </div>
 
+            <div className = 'viz-info-div' style = {{textAlign: "left", marginTop : '2rem'}}>
+            <p>(Might take a bit to load) </p>
+            </div>
+
             <Row className = 'data-viz' style = {{marginTop : '2rem'}}>
             
             <Col sm={12} md = {12} lg = {6}>
@@ -49,7 +53,7 @@ class Data_Viz extends Component {
             </Col>
         
         <Container fluid style = {{marginTop: "2rem", textAlign: "center"}}>
-            <p>Sources: Data from Kaggle Football Dataset <a href = "https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017">here</a></p>
+            <p>Sources: Data from Kaggle Football Dataset <a href = "https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017">here</a>. Image from <a href = "https://www.mlssoccer.com/post/2014/09/21/new-york-city-fcs-frank-lampard-scores-dramatic-goal-vs-chelsea-manchester-city">MLS</a></p>
         </Container>
         </Row>
 

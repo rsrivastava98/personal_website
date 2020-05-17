@@ -163,6 +163,10 @@ html, body{
     margin-bottom: 2rem;
 }
 
+.card-img{
+    height: 188px;
+}
+
 .card{
     background-color: #f4f4f4;
     color: #1d3557;
@@ -171,9 +175,12 @@ html, body{
     width: 349px; */
 }
 
-/* .cards a{
+.cards a{
     text-decoration: none;
-} */
+    color: #1d3557;
+    font-weight: 300;
+
+}
 
 .projects{
     margin-bottom: 2rem;
@@ -241,7 +248,22 @@ body{
         width: 100%;
         height: auto;
     } 
+
+    .card-img{
+        height: auto;
+    }
+
+
     
+}
+
+@media screen and (max-width: 800px) and (min-width: 650px){
+
+    .card-img{
+        display: none;
+    }
+   
+
 }
 
 @media screen and (max-width: 1200px){

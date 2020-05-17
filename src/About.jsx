@@ -52,10 +52,10 @@ class About extends Component {
     return (
       <Container className="about">
           <Row>
-                <Col xs = {12} md = {12} lg = {6}>
+                <Col xs = {12} s = {12} md = {6} lg = {6}>
                 <Image src={profile} className="profile" alt='profile' rounded/>
                 </Col>
-                <Col xs = {12} md = {12} lg = {6} className = "bio">
+                <Col xs = {12} s = {12} md = {6} lg = {6} className = "bio">
                 <h3>About Me <Emoji emoji = "👨🏽‍💻" label = "person" /></h3>
                 <p>I grew up in Bhopal, India however spent 6 years of my life boarding at the Doon School in the foothills of the Indian Himalayas before moving to Providence, RI.
                  Catch me at rehearsal for Brown Barsaat, Brown's premier south asian fusion acapella group, on the soccer field playing, indoors watching a game, or at your nearest Indian restaurant (Kebab and Curry for brown students!) </p>

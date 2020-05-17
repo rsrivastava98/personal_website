@@ -54,17 +54,18 @@ class Projects extends Component {
         {projects.map(function(project){
 
                 return <Card  className = "card">
-                <Card.Img style = {{height: "188px"}} variant = 'top' src = {images[project.description]}/>
+                    <a href = {project.url}>
+                    <Card.Img className = "card-img" variant = 'top' src = {images[project.description]}/>
                 <Card.Body>
                     <Card.Title>{project.description} <Emoji label = {project.description} emoji = {project.emoji}/></Card.Title>
                     <Card.Text>
                     {project.short}
                     </Card.Text>
-                    <Link to = {project.url}>
-                    <Button variant = 'secondary'>View</Button>
-                    </Link>
                 </Card.Body>
-                </Card>
+                
+                    </a>
+                    </Card>
+                
         }
         )}
 
