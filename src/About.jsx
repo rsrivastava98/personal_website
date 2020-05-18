@@ -21,7 +21,7 @@ class About extends Component {
 
   download = () => {
 
-    fetch('http://localhost:3000/resume.pdf')
+    fetch('https://quirky-cray-56c22e.netlify.app/resume.pdf')
     .then(response => {
         console.log(response)
 
