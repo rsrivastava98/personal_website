@@ -30,7 +30,7 @@ class Home extends Component {
                 <h1>Hi there <Emoji emoji = "👋" label = "wave" /> </h1>
             </Container>
             <Container >
-                <p>I am Rudra <Emoji emoji = "👨🏽‍💻" label = "person" />I am a rising senior at Brown University <Emoji emoji = "🐻" label = "bear" /> ‍concentrating in Computer Science-Economics, passionate about Software, Fintech and Product Management! I interned at Oracle last summer as a Software Engineer on the Oracle Analytics Team and will be joining Square <Emoji emoji = "◼️" label = "square" />as a Software Engineer Intern on the Business Operations Platforms team this summer!  </p>
+                <p>I am Rudra <Emoji emoji = "👨🏽‍💻" label = "person" /> I am a rising senior at Brown University <Emoji emoji = "🐻" label = "bear" /> ‍concentrating in Computer Science-Economics, passionate about Software, Fintech and Product Management! I interned at Oracle last summer as a Software Engineer on the Oracle Analytics Team and will be joining Square <Emoji emoji = "◼️" label = "square" /> as a Software Engineer Intern on the Business Operations Platforms team this summer!  </p>
             </Container>
         </Container>
 
