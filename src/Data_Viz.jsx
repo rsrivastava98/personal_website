@@ -53,7 +53,7 @@ class Data_Viz extends Component {
             </Col>
         
         <Container fluid style = {{marginTop: "2rem", textAlign: "center"}}>
-            <p>Sources: Data from Kaggle Football Dataset <a href = "https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017">here</a>. Image from <a href = "https://www.mlssoccer.com/post/2014/09/21/new-york-city-fcs-frank-lampard-scores-dramatic-goal-vs-chelsea-manchester-city">MLS</a></p>
+            <p>Sources: Data from Kaggle Football Dataset <a href = "https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017">here</a>.</p>
         </Container>
         </Row>
 

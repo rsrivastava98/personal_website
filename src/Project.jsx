@@ -12,8 +12,11 @@ import Button from 'react-bootstrap/Button'
 
 import guitar from './guitar.png';
 import CV from './shanghaitech.png'
-import football from './football.png'
+import newplot from './newplot.png'
+import football from './football.jpeg'
+import ml from './ml.jpg'
 import Emoji from './Emoji'
+import game from "./game.png"
 
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -31,9 +34,11 @@ export const images = {
 
     "Guitar Center": guitar,
     "Football Dashboard": football,
-    "Government Policy Impact on the Coronavirus": guitar,
+    "Government Policy Impact on the Coronavirus": newplot,
     "Crowd Counting": CV,
-    "Computing Cluster User Management": CV
+    "Computing Cluster User Management": ml,
+    "Contact": game
+
 }
 
 

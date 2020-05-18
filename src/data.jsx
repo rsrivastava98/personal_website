@@ -4,6 +4,8 @@ import Image from 'react-bootstrap/Image'
 import guitar from './guitar.png'
 import Button from 'react-bootstrap/Button'
 import Data_Viz from './Data_Viz'
+import LightboxImage from './Lightbox'
+import poster from './Poster.jpg'
 
 
 
@@ -24,7 +26,7 @@ We used a predominantly white and gray color scheme with dark red accents. The n
 
 <p>We used React to create the live searching feature of the website. Our data (list of guitar information) is stored in the App.js file and is passed as a prop to the FilteredList component. This creates the dropdowns for sorting and filtering, and passes the filtered/sorted data as a prop to the List component. The FavoritesFilter is a separate component that controls the functionality and state for the favorites filtering feature. The List component in turn creates Guitar components for each item, rendering each item cell. The user can select categories (Brand and Acoustic/Electric) to filter for or ways to sort using the dropdown menus which in turn trigger methods that change the state. This change in state thus triggers filtering and sorting mechanisms on the data. Similarly, the Favorites toggle behaves like a filter and causes a change in state only showing items that are favorited. Each Guitar component contains a state for favorite that changes whenever the item is “hearted”. Clicking the “heart” also triggers a function in FilteredList - the function is passed down as a prop to List and then to each Guitar component  - essentially changing the data to indicate the item is favorited.</p>
 <Container fluid style={{textAlign: "center"}}> 
-<Image src = {guitar} alt = "guitar" className = "single-project-image" rounded/>
+<LightboxImage image = {guitar}/>
 <br></br><br></br>
 <Button href = 'https://github.com/sumupitchayan/uiux-development' className = 'button-project'>Code</Button>
 <Button href = 'https://agile-ocean-30189.herokuapp.com/' className = 'button-project'>Site</Button>
@@ -33,7 +35,30 @@ We used a predominantly white and gray color scheme with dark red accents. The n
 </Container>,
 
 "Football Dashboard": 
-<Data_Viz/>
+<Data_Viz/>,
+
+"Government Policy Impact on the Coronavirus":
+<Container fluid className = 'single-project-container'>
+
+<h3>A study on how Governments changed the path of the Virus</h3>
+
+    <p>My group and I worked on determining government impact on the Coronavirus using Hypothesis Testing and Regression. Our dataset consisted of government impact variables
+        such as measures of government effectiveness, the human freedom index, the Oxford Stringency Index, and others. We were trying to see the effect of these variables on total cases
+        per 1M people around the world. We used Multiple Regression to find the variables that have an impact on cases and investigated the impact using T-tests. The growth of cases over time 
+        was also tracked with respect to these variables. Our results are given in the poster below. 
+    </p>
+    <Container fluid style={{textAlign: "center"}}> 
+
+    <LightboxImage image = {poster}/>
+    </Container>
+</Container>,
+"Contact":
+
+<Container fluid className = 'single-project-container'>
+
+    <p>Coming soon! </p>
+</Container>
+
 
 }
 
