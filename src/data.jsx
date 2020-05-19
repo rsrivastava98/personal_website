@@ -66,9 +66,9 @@ We used a predominantly white and gray color scheme with dark red accents. The n
 "Computing Cluster User Management":
 <Container fluid className = 'single-project-container'>
 
-<p>Coming soon! </p>
+<p>Wrote scripts to scrub the user database of the computing cluster and create a dashboard like detailed report (PDF) for any user with statistics and visualizations for various SLURM variables (Python – Pandas, Numpy, Matplotlib, PyLatex). Used clustering techniques to classify users as per real world research groups (sklearn).</p>
+<Button href = "https://github.com/chriscianfarani/CCV-User-Statistics" className = 'button-project'>Code</Button>
 </Container>
-
 
 }
 
