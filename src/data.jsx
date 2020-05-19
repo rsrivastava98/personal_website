@@ -57,6 +57,16 @@ We used a predominantly white and gray color scheme with dark red accents. The n
 <Container fluid className = 'single-project-container'>
 
     <p>Coming soon! </p>
+</Container>,
+
+"Crowd Counting":<Container fluid className = 'single-project-container'>
+
+<p>Coming soon! </p>
+</Container>,
+"Computing Cluster User Management":
+<Container fluid className = 'single-project-container'>
+
+<p>Coming soon! </p>
 </Container>
 
 
