@@ -76,17 +76,18 @@ We used a predominantly white and gray color scheme with dark red accents. The n
 
 "Crowd Counting":<Container fluid className = 'single-project-container'>
 
-<h3>1,2,3 ... how many peopel? Crowd Counting using Computer Vision and Switch CNN</h3>
+<h3>1,2,3 ... how many people? Crowd Counting using Computer Vision and Switch CNN</h3>
 
 <p>There are several places in the world where we encounter crowds. From vigils to concert queues, people gathering has always held social, cultural and political significance. Analyzing data about crowds can give important insights into trends around people collecting together and sociocultural behavior. In this project, we treat counting the number of people in a place as a computer vision problem. Our hypothesis was that through the analysis of images of crowds, we would be able to produce an efficient counting system. In general, it is difficult to generate accurate counting results due to the nature of crowds. Usually, only heads are visible without distinctive facial features making it difficult to distinguish between individual heads. In addition to that, it is challenging to count heads as figures tend to merge with their surrounding environment. The biggest factor that needs to be taken into consideration when dealing with crowds is their density. An important characteristic, density helps us understand how crowded the area is and whether it is more spread out or concentrated. 
 
 In our approach for counting the number of people in an image, we use density as our main parameter. We follow a process similar to the one outlined in a paper titled Switching Convolutional Neural Networks for Crowd Counting. In this process an image patch goes through a deep patch classifier that, based on the density of the crowd, determines which one of three total regressors it should be assigned to. Following that, the image patch is passed through the regressor. The output of the regressor is compared against the ground truth value of a count obtained from the density map of that image. 
 </p>
+<Container fluid style={{textAlign: "center"}}> 
 
 <LightboxImage image = {cnn}/>
-<Button href = "https://github.com/rsrivastava98/crowd-counting" className = 'button-project'>Code</Button>
+<Button style = {{marginTop: "2rem"}} href = "https://github.com/rsrivastava98/crowd-counting" className = 'button-project'>Code</Button>
 
-
+</Container>
 </Container>,
 
 
