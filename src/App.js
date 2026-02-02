@@ -10,10 +10,8 @@ import Home from './Home'
 import Project from "./Single_Project"
 import { 
     BrowserRouter as Router, 
-    Route, 
-    Link, 
-    Switch,
-    withRouter
+    Routes,
+    Route
 } from 'react-router-dom'; 
 
 
@@ -36,14 +34,14 @@ class App extends Component {
     return (
         
         <Router>
-
-        <Route exact path = '/' render = {(props) => <Home projects = {this.projects} {...props}/>}></Route>
+          <Routes>
+            <Route path = '/' element = {<Home projects = {this.projects} />} />
 
             {this.projects.map(function(project){
-                return <Route path = {project.url} render = {(props) => <Project project = {project} {...props}/>}></Route>;
+                return <Route key={project.url} path = {project.url} element = {<Project project = {project} />} />;
             }
             )}
-            
+          </Routes>
         </Router>
     );
   }
