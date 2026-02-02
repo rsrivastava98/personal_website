@@ -6,7 +6,6 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
-import CardDeck from 'react-bootstrap/CardDeck'
 
 import Button from 'react-bootstrap/Button'
 
@@ -22,13 +21,6 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-import { 
-    BrowserRouter as Router, 
-    Route, 
-    Link, 
-    Switch,
-    withRouter
-} from 'react-router-dom'; 
 
 export const images = {
 
@@ -54,11 +46,12 @@ class Projects extends Component {
   createRow = (projects) => {
     
     return(
-    <CardDeck className = "cards">
+    <Row className = "cards">
 
         {projects.map(function(project){
 
-                return <Card  className = "card">
+                return <Col key={project.url} md={4} className="mb-4">
+                  <Card className = "card">
                     <a href = {project.url}>
                     <Card.Img className = "card-img" variant = 'top' src = {images[project.description]}/>
                 <Card.Body>
@@ -70,11 +63,12 @@ class Projects extends Component {
                 
                     </a>
                     </Card>
+                  </Col>
                 
         }
         )}
 
-    </CardDeck>)
+    </Row>)
 
 
   }
